@@ -1,3 +1,24 @@
-<h2>Tower Here</h2>
+<div class="mdl-layout">
+  <div class="mdl-layout__content">
+    <div class="container">
+    <header>
 
-{{outlet}}
+      <ul>
+        <li>$4000</li>
+        <li>{{mdl-icon icon='group'}}5/10</li>
+        <li>{{mdl-icon icon='contacts'}}10</li>
+      </ul>
+    </header>
+    </div>
+
+    <ul class="the-tower">
+      <li class="floor"> </li>
+    </ul>
+  </div>
+
+  {{#mdl-mini-footer}}
+    {{#mdl-footer-linklist}}
+      {{mdl-button isFloating=true icon='add'}}
+    {{/mdl-footer-linklist}}
+  {{/mdl-mini-footer}}
+</div>
