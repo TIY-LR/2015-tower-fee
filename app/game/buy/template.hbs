@@ -1,1 +1,19 @@
-<h3>Buy Here</h3>
+<h3 class='buy-popup'>Purchase An Additional Floor</h3>
+
+{{#mdl-table content=model class="mdl-cell mdl-cell--6-col" as |row|}}
+	{{#mdl-table-col label='Business'}}
+		{{mdl-radio value=row.id text=row.business name='business'}}
+	{{/mdl-table-col}}
+	{{#mdl-table-col label='Cost'}}
+		{{row.cost}}
+	{{/mdl-table-col}}
+  {{#mdl-table-col label='Employees Needed'}}
+    {{row.needed}}
+  {{/mdl-table-col}}
+  {{#mdl-table-col label='Earnings'}}
+    {{row.earnings}}
+  {{/mdl-table-col}}
+{{/mdl-table}}
+
+{{#mdl-button class='submit-popup' isRaised=true}}Buy{{/mdl-button}}
+{{mdl-button class='submit-popup' on-click='goBack' isRaised=true text='Cancel'}}
