@@ -1,6 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .floor--apartment {
   background: yellow;
-
 }
 
 .floor {
@@ -11,18 +16,17 @@
 
 }
 .the-tower {
-  position: relative;
-  top: 65px;
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  position: relative;
   justify-content: flex-end;
-  flex-direction: column-reverse;
-  justify-content: center;
+  align-items: center;
+}
 
-}
 .floor--business-coffee {
-background: black;
+  background: black;
 }
+
 .floor--business-music {
-background-color: red;
+  background-color: red;
 }

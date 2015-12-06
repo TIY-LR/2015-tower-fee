@@ -1,28 +1,28 @@
 <div class="mdl-layout">
   <div class="mdl-layout__content">
-    <div class="container">
     <header>
-
       <ul class="status-bar">
-        <li class="status-bar__item">$4000</li>
+        <li class="status-bar__item">$5000</li>
         <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='group'}}5/10</li>
         <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='contacts'}}10</li>
       </ul>
     </header>
-    </div>
+{{outlet}}
 
+  <div class="container">
     <ul class="the-tower">
       <li class="floor floor--apartment"></li>
       <li class="floor floor--business floor--business-coffee"></li>
       <li class="floor floor--business floor--business-music"></li>
     </ul>
-  </div>
 
-  {{outlet}}
+
 
   {{#mdl-mini-footer}}
     {{#mdl-footer-linklist}}
-      {{mdl-button isFloating=true icon='add'}}
+      {{#link-to 'game.buy'}}{{mdl-button isFloating=true icon='add'}}{{/link-to}}
     {{/mdl-footer-linklist}}
   {{/mdl-mini-footer}}
+    </div>
+  </div>
 </div>
