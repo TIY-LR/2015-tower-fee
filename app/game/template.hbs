@@ -2,10 +2,10 @@
   <div class="mdl-layout__content sky">
     <header>
       <ul class="status-bar">
-        <li class="status-bar__item">{{game-time startTime=model.game.dateCreated}}</li>
-        <li class="status-bar__item">{{format-money model.game.totalMoney}}</li>
-        <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='group'}}{{model.game.totalResidents}}/{{model.game.capacity}}</li>
-        <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='contacts'}}{{model.game.availableEmployees}}</li>
+        <li class="status-bar__item">{{game-time startTime=model.dateCreated}}</li>
+        <li class="status-bar__item">{{format-money model.totalMoney}}</li>
+        <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='group'}}{{model.totalResidents}}/{{model.capacity}}</li>
+        <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='contacts'}}{{model.availableEmployees}}</li>
       </ul>
     </header>
 
@@ -22,9 +22,14 @@
     {{#mdl-mini-footer}}
       {{#mdl-footer-linklist}}
         {{#link-to 'game.buy' class="buy-btn"}}
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-Expand Tower
-</button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Expand Tower
+          </button>
+        {{/link-to}}
+        {{#link-to 'game.new' class="new-btn"}}
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            New Game
+          </button>
         {{/link-to}}
       {{/mdl-footer-linklist}}
     {{/mdl-mini-footer}}

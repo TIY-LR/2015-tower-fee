@@ -19,3 +19,16 @@ $footer-bg-color: unquote("rgb(#{$palette-green-800})");
 .mdl-table{
   position: absolute;
 }
+.buy-btn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  margin: $padding ($padding * 2);
+}
+.new-btn {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: $padding ($padding * 2);
+  }

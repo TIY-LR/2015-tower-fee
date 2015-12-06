@@ -6,4 +6,6 @@ export default DS.Model.extend({
   capacity: DS.attr(),
   availableEmployees: DS.attr(),
   dateCreated: DS.attr('date'),
+
+  floors: DS.hasMany('floor', {async: true}),
 });

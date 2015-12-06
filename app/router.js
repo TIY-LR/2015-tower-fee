@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('game', {path: '/'}, function() {
     this.route('buy');
+    this.route('new');
   });
 });
 
