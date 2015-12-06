@@ -1,0 +1,28 @@
+.floor--apartment {
+  background: yellow;
+
+}
+
+.floor {
+  width: 500px;
+  list-style: none;
+  height: 80px;
+  border: solid grey 1px;
+
+}
+.the-tower {
+  position: relative;
+  top: 65px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+}
+.floor--business-coffee {
+background: black;
+}
+.floor--business-music {
+background-color: red;
+}

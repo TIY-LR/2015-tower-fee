@@ -1,22 +1,9 @@
+@import "color-definitions";
+
+$footer-bg-color: unquote("rgb(#{$palette-green-800})");
+// $footer-bg-color: unquote("rgb(#{$palette-green-800})") !default;
+
 @import 'material-design-lite';
-
-.mdl-data-table td, .mdl-data-table th,  {
-  text-align: center;
-  font-size: 1.7rem;
-  color: #314050
-}
-
-.inherited-link {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.ground {
-  background: green;
-  width: 100%;
-  height: 400px;
-}
-
-.mdl-layout {
-  min-height: 100vh;
-}
+@import 'status-bar';
+@import 'tower-stack';
+@import 'pop-up-window';

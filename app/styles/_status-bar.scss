@@ -1,0 +1,22 @@
+.status-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+  display: flex;
+
+  background: black;
+  color: white;
+
+  list-style: none;
+}
+.status-bar__item {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.status-bar__icon {
+  font-size: 40px;
+}

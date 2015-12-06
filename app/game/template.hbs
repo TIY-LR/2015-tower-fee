@@ -3,18 +3,22 @@
     <div class="container">
     <header>
 
-      <ul>
-        <li>$4000</li>
-        <li>{{mdl-icon icon='group'}}5/10</li>
-        <li>{{mdl-icon icon='contacts'}}10</li>
+      <ul class="status-bar">
+        <li class="status-bar__item">$4000</li>
+        <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='group'}}5/10</li>
+        <li class="status-bar__item">{{mdl-icon class="status-bar__icon" icon='contacts'}}10</li>
       </ul>
     </header>
     </div>
 
     <ul class="the-tower">
-      <li class="floor"> </li>
+      <li class="floor floor--apartment"></li>
+      <li class="floor floor--business floor--business-coffee"></li>
+      <li class="floor floor--business floor--business-music"></li>
     </ul>
   </div>
+
+  {{outlet}}
 
   {{#mdl-mini-footer}}
     {{#mdl-footer-linklist}}
