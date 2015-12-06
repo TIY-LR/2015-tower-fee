@@ -8,10 +8,14 @@ export default Ember.Route.extend({
   },
 
   floorBuySuccess(floor) {
+    // Wait for the game to refresh
+    // Then hide the buy panel
     debugger;
   },
 
   floorBuyFailure(response) {
+    // Refresh the game
+    // Alert the user that they don't have enough money
     debugger;
   },
 
