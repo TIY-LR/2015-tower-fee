@@ -1,15 +1,6 @@
-.sky {
-  background: #63bbfb;
-  position: relative;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .floor--apartment {
   background: yellow;
+
 }
 
 .floor {
@@ -20,19 +11,18 @@
 
 }
 .the-tower {
-  display: flex;
-  flex-direction: column-reverse;
   position: relative;
+  bottom:
   align-items: center;
-  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
 
-  min-height: calc(100% - #{$padding * 4});
+
 }
-
 .floor--business-coffee {
-  background: black;
+background: black;
 }
-
 .floor--business-music {
-  background-color: red;
+background-color: red;
 }

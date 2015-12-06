@@ -15,3 +15,7 @@ $footer-bg-color: unquote("rgb(#{$palette-green-800})");
 
   margin: $padding ($padding * 2);
 }
+
+.mdl-table{
+  position: absolute;
+}
