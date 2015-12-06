@@ -3,21 +3,21 @@
 
 <h3 class='buy-popup'>Purchase An Additional Floor</h3>
 
-{{#mdl-table content=model class="mdl-cell mdl-cell--6-col" as |row|}}
+{{#mdl-table content=model class="mdl-cell mdl-cell--6-col" as |business|}}
 	{{#mdl-table-col label='Business'}}
-		{{mdl-radio value=row.id text=row.business name='business'}}
+		{{mdl-radio value=business.id text=business.category name='type' on-click=(route-action 'selectBusiness' business)}}
 	{{/mdl-table-col}}
 	{{#mdl-table-col label='Cost'}}
-		{{row.cost}}
+		${{business.cost}}
 	{{/mdl-table-col}}
   {{#mdl-table-col label='Employees Needed'}}
-    {{row.needed}}
+    {{business.numberOfPeopleNeeded}}
   {{/mdl-table-col}}
   {{#mdl-table-col label='Earnings'}}
-    {{row.earnings}}
+    ${{business.earningsPerMinute}}
   {{/mdl-table-col}}
 {{/mdl-table}}
 
-{{#mdl-button class='submit-popup' isRaised=true}}Buy{{/mdl-button}}
-{{mdl-button class='submit-popup' on-click='goBack' isRaised=true text='Cancel'}}
+{{#mdl-button class='submit-popup' isRaised=true on-click=(route-action 'buyFloor')}}Buy{{/mdl-button}}
+{{mdl-button class='submit-popup' on-click=(route-action 'goBack') isRaised=true text='Cancel'}}
 </div>

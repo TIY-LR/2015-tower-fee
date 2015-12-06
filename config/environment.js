@@ -10,15 +10,18 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      }
+      },
     },
     sassOptions: {
-      includePaths: ['bower_components/material-design-lite/src']
+      includePaths: ['bower_components/material-design-lite/src'],
     },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    'ember-cli-mirage': {
+      enabled: false,
+    },
   };
 
   if (environment === 'development') {
@@ -39,6 +42,12 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+  }
+
+  if (process.env.MIRAGE === 'true') {
+    ENV['ember-cli-mirage'] = {
+      enabled: true,
+    };
   }
 
   if (environment === 'production') {

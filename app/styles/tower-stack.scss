@@ -9,14 +9,14 @@
 }
 
 .floor--apartment {
-  background: yellow;
+  background: url(images/apartment.png);
 }
 
 .floor {
   width: 500px;
   list-style: none;
   height: 80px;
-  border: solid grey 1px;
+  border: solid grey 4px;
 
 }
 .the-tower {
@@ -29,9 +29,9 @@
 }
 
 .floor--business-coffee {
-  background: url('http://i.cdn.turner.com/cnn/2010/HEALTH/04/28/coffee.studies/t1larg.coffee.ts.jpg');
+  background: url(images/coffee-bar.jpg);
 }
 
 .floor--business-music {
-  background-color: red;
+  background: url(images/music-studio.jpg);
 }
