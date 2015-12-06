@@ -13,12 +13,12 @@ export default Ember.Route.extend({
     this.transitionTo('game.index');
   },
 
-  // floorBuyFailure(response) {
-  //   // Refresh the game
-  //   this.store.queryRecord('game', {latest: true});
-  //   // Alert the user that they don't have enough money
-  //   alert('Bro make sure you have enough money and or people');
-  // },
+  floorBuyFailure(response) {
+    // Refresh the game
+    this.store.queryRecord('game', {latest: true});
+    // Alert the user that they don't have enough money
+    alert('Bro make sure you have enough money and or people');
+  },
 
   actions: {
     goBack() {
