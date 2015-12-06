@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 
-.floor--apartment {
+.floor--residential {
   background: url(images/apartment.png);
 }
 
@@ -28,10 +28,10 @@
   min-height: calc(100% - #{$padding * 4});
 }
 
-.floor--business-coffee {
+.floor--coffee-shop {
   background: url(images/coffee-bar.jpg);
 }
 
-.floor--business-music {
+.floor--music-studio {
   background: url(images/music-studio.jpg);
 }

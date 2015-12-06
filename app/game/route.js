@@ -11,6 +11,6 @@ export default Ember.Route.extend({
   afterModel() {
     window.setInterval(() => {
       this.store.queryRecord('game', {latest: true});
-    }, 60000);
+    }, 3000);
   },
 });

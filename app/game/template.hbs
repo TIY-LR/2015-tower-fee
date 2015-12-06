@@ -13,11 +13,9 @@
     <ul class="the-tower">
       {{#each model.floors as |floor|}}
         {{#unless floor.isNew}}
-          <li class="floor floor--{{floor.type}}">{{floor.floorNumber}}</li>
+          <li class="floor floor--{{str-dasherize floor.business.category}}">{{floor.floorNumber}}</li>
         {{/unless}}
       {{/each}}
-      <li class="floor floor--business floor--business-coffee"></li>
-      <li class="floor floor--business floor--business-music"></li>
     </ul>
 
     {{#mdl-mini-footer}}
