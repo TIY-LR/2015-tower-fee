@@ -16,6 +16,8 @@
     "lodash": "~3.7.0",
     "Faker": "~3.0.0",
     "font-awesome": "~4.4.0",
-    "material-design-lite": "~1.0.4"
+    "material-design-lite": "~1.0.4",
+    "moment": ">= 2.8.0",
+    "moment-timezone": ">= 0.1.0"
   }
 }
