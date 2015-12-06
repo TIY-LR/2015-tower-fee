@@ -12,6 +12,7 @@ export default Ember.Route.extend({
         game: {
           player: 'New Player',
           totalMoney: 5000,
+          populationCheckRate: 20,
         },
       }),
     }).then(() => {
