@@ -5,5 +5,5 @@ export default DS.Model.extend({
   totalResidents: DS.attr(),
   capacity: DS.attr(),
   availableEmployees: DS.attr(),
-
+  dateCreated: DS.attr('date'),
 });
