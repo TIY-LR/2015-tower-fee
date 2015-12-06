@@ -1,8 +1,12 @@
+.sky {
+  background: #63bbfb;
+  position: relative;
+}
+
 .container {
   display: flex;
   flex-direction: column;
 }
-
 
 .floor--apartment {
   background: yellow;
@@ -17,10 +21,12 @@
 }
 .the-tower {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   position: relative;
-  justify-content: flex-end;
   align-items: center;
+  margin: 0;
+
+  min-height: calc(100% - #{$padding * 4});
 }
 
 .floor--business-coffee {
