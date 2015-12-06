@@ -22,7 +22,6 @@
 .the-tower {
   display: flex;
   flex-direction: column-reverse;
-  position: relative;
   align-items: center;
   margin: 0;
 
@@ -30,7 +29,7 @@
 }
 
 .floor--business-coffee {
-  background: black;
+  background: url('http://i.cdn.turner.com/cnn/2010/HEALTH/04/28/coffee.studies/t1larg.coffee.ts.jpg');
 }
 
 .floor--business-music {

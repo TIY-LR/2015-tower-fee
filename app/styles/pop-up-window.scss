@@ -1,7 +1,8 @@
 .mdl-data-table td, .mdl-data-table th,  {
   text-align: center;
   font-size: 1.7rem;
-  color: #314050
+  color: #314050;
+
 }
 
 .inherited-link {
@@ -19,4 +20,7 @@
 
 .mdl-layout {
   min-height: 100vh;
+}
+.cookies {
+  position: fixed;
 }
