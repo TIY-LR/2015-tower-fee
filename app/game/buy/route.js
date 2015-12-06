@@ -9,14 +9,15 @@ export default Ember.Route.extend({
 
   floorBuySuccess(floor) {
     // Wait for the game to refresh
-    // Then hide the buy panel
-    debugger;
+    this.store.queryRecord('game', {latest: true});
+    this.transitionTo('game.index');
   },
 
   floorBuyFailure(response) {
     // Refresh the game
+    this.store.queryRecord('game', {latest: true});
     // Alert the user that they don't have enough money
-    debugger;
+    alert('Bro make sure you have enough money and or people');
   },
 
   actions: {
